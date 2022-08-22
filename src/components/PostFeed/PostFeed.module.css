@@ -1,0 +1,135 @@
+.container {
+  padding: 2.5rem;
+
+  border-radius: 8px;
+  background-color: var(--gray-600);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profileContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 160%;
+}
+
+.header img {
+  display: flex;  
+  height: 3.75rem;
+  width: 3.75rem;
+  object-fit: initial;
+
+  border-radius: 8px;
+  border: 4px solid var(--gray-600);
+  outline: 2px solid var(--blue-900);
+}
+
+.profileContent p {
+  font-weight: 700;
+
+  color: var(--gray-100);
+}
+
+.profileContent span {
+  color: var(--gray-300);
+}
+
+.postTime {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+}
+
+.postText {
+  line-height: 160%;
+  margin-bottom: 1.5rem;
+}
+
+.postText a {
+  color: var(--blue-900);
+  font-weight: 700;
+  text-decoration: none;
+
+  transition-duration: 0.25s;
+}
+
+.postText a:hover {
+  transition-duration: 0.25s;
+
+  color: var(--blue-1000);
+}
+
+.footer {
+  border-top: 1px solid var(--gray-500);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer span {
+  font-weight: 700;
+  line-height: 160%;
+  color: var(--gray-100);
+  margin-bottom: 1rem;
+}
+
+.footer textarea {
+  background-color: var(--gray-700);
+  color: var(--gray-200);
+  border: none;
+
+
+  display: flex;
+  text-align: flex-start;
+
+  border-radius: 8px;
+  height: 6rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  line-height: 140%;
+
+  resize: none;
+}
+
+.footer div {
+  transition-duration: 0.1s;
+
+  visibility: hidden;
+  max-height: 0;
+}
+
+.footer:focus-within div {
+  transition-duration: 0.25s;
+
+  visibility: visible;
+  max-height: none;
+}
+
+.footer button {
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+
+  background-color: var(--blue-900);
+  color: var(--gray-700);
+
+  font-weight: 700;
+  line-height: 1rem;
+
+  cursor: pointer;
+
+  transition-duration: 0.25s;
+}
+
+.footer button:hover {
+  transition-duration: 0.25s;
+  
+  background-color: var(--blue-1000);
+  color: var(--gray-600);
+}
