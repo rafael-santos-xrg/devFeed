@@ -1,0 +1,106 @@
+button:focus{
+  box-shadow: none!important;
+  /* line-height: 0; */
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1rem;
+}
+
+.img {
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 8px;
+  object-fit: initial;
+}
+
+.commentSpace{
+  background-color: var(--gray-500);
+
+  border-radius: 9px;
+  padding: 1rem 1rem 1.5625rem;
+  margin-bottom: 1rem;
+}
+
+.commentSpace section {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between
+}
+
+.header p {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 160%;
+  
+  color: var(--gray-100);
+}
+
+.header span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 160%;
+
+  color: var(--gray-300);
+}
+
+.trashButton {
+  border: none;
+
+  background-color: transparent;
+  color: var(--gray-300);
+
+  cursor: pointer;
+}
+
+.trashButton:hover {
+  color: var(--danger);
+
+  transition-duration: 0.25s;
+}
+
+.commentText {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+
+  color: var(--gray-100);
+}
+
+.clappingSpace {
+  display: flex;
+  align-items: center;
+  
+}
+
+.clapButton {
+  display: flex;
+  align-items: center;
+  border: none;
+
+  gap: 0.625rem;
+
+  background: transparent;
+  color: var(--gray-300);
+}
+
+.clapButton:hover {
+  cursor: pointer;
+
+  color: var(--blue-800);
+
+  transition-duration: 0.25s;
+}
+
+.clappingCount{
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 17px;
+}
+
+.clappingCount span:before {
+  content: "\2022";
+  padding: 0.25rem;
+}
