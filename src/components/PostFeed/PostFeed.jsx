@@ -1,3 +1,4 @@
+import Comment from '../Comments/Comment'
 import styles from './PostFeed.module.css'
 
 function PostFeed() {
@@ -44,6 +45,7 @@ function PostFeed() {
           <button type="submit">Publicar</button>
         </div>
       </footer>
+      <Comment />
     </div>
   )
 }
